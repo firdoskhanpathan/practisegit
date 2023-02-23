@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: aqua;
+        min-height: 100vh;
+    }
+
+    .box {
+        background-color: aquamarine;
+        display: flex;
+        flex: bottom;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        box-sizing: border-box;
+        margin: auto;
+    }
+
+    .container {
+        width: 500px;
+        /* padding: 50px; */
+        background-color: aliceblue;
+        color: black;
+    }
+
+    summary {
+        /* width: 100%; */
+        background-color: blue;
+        border: 2px solid black;
+        padding: 10px;
+        position: relative;
+    }
+
+    .container details summary::after {
+        content: '+';
+        position: absolute;
+        top: 5px;
+        right: 15px;
+        color: red;
+        font-size: 30px;
+        /* font-weight: 700; */
+        transition: .2sec linear;
+
+    }
+
+    .container details[open] summary::after {
+        transform: rotate(135deg);
+    }
+
+    .sec ul {
+        float: left;
+        margin-left: 10px;
+    }
+
+    .sub {
+        display: none;
+    }
+
+    .sec ul li:hover>ul {
+        display: initial;
+    }
+
+    .famely {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    nav ul li {
+        list-style: none;
+        position: relative;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        /* padding-right: 80px; */
+        margin-right: 80px;
+        padding: 0px 40px;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .submenu {
+        display: none;
+    }
+
+    ul li a:hover {
+        background-color: white;
+        /* background-color: black; */
+        /* display: initial; */
+    }
+    nav ul li ul{
+        position: absolute;
+        top: 20px;
+        left: 0;
+        width: 200px;
+        background:yellow;
+        color:black;
+        border: 2px solid forestgreen;
+        display: none;
+    }
+    nav ul li ul li{
+        border-top: 1px solid red;
+        padding: 10px;
+        width: 100%;
+        /* padding: 5px; */
+
+    }
+    nav ul li ul li ul{
+        left: 200px;
+        top: 0;
+    }
+    nav ul li:hover > ul{
+        display: initial;
+    }
+</style>
+
+<body>
+    <header>
+        <h1>hellog</h1>
+        <nav>
+            <ul>
+                <li><a href="">home</a> </li>
+                <li><a href="">service</a>
+                    <ul class="submenu">
+                        <li><a href="">caling</a> <ul><li>home call</li>
+                        <li>shop call</li></ul></li>
+                        <li><a href="">delivery</a>
+                            <ul>
+                                <li>ghar </li>
+                                <li>shop</li>
+                                <li>store</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="">contact</a>
+                    <ul class="submenu">
+                        <li>1322455</li>
+                        <li>355658769</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- <section class="box">
+        <div class="container">
+            <details>
+                <summary class="sum">welcome</summary>
+                <h1>welcome</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione tempora expedita, dolorum impedit
+                    soluta
+                    aliquid fuga numquam ullam voluptas incidunt iure et. Veniam neque aperiam nulla, quos in cumque
+                    labore!
+                </p>
+            </details>
+            <details>
+                <summary>welcome</summary>
+                <h1>welcome</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione tempora expedita, dolorum impedit
+                    soluta
+                    aliquid fuga numquam ullam voluptas incidunt iure et. Veniam neque aperiam nulla, quos in cumque
+                    labore!
+                </p>
+            </details>
+            <details>
+                <summary>welcome</summary>
+                <h1>welcome</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione tempora expedita, dolorum impedit
+                    soluta
+                    aliquid fuga numquam ullam voluptas incidunt iure et. Veniam neque aperiam nulla, quos in cumque
+                    labore!
+                </p>
+            </details>
+            <details>
+                <summary>welcome</summary>
+                <h1>welcome</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione tempora expedita, dolorum impedit
+                    soluta
+                    aliquid fuga numquam ullam voluptas incidunt iure et. Veniam neque aperiam nulla, quos in cumque
+                    labore!
+                </p>
+            </details>
+        </div>
+    </section> -->
+
+
+
+</body>
+
+</html>
